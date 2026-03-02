@@ -1,140 +1,242 @@
-/* ===== УНИВЕРСАЛЬНЫЕ СТИЛИ ДЛЯ ЛЮБОЙ ФОРМЫ UPTAXI ===== */
-#order-form-uptaxi {
-  font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+#order-form .input#country, #order-form .input#city, #order-form .input#service, #order-form .input.street, #order-form .input.dom, #order-form .input.pod{
+	float: none;
+	position: static;
+	margin-right: 0px;
 }
-
-/* --- КОНТЕЙНЕР ФОРМЫ --- */
-#order-form-uptaxi [id^="order-uptaxi-form-"] #form,
-#order-form-uptaxi [id*="order-uptaxi-form-"] #form {
-  max-width: 700px !important;
-  margin: 0 auto !important;
-  background: #ffffff !important;
-  padding: 32px 28px !important;
-  border-radius: 32px !important;
-  box-shadow: 0 20px 40px -10px rgba(0, 20, 30, 0.15) !important;
-  transition: box-shadow 0.3s !important;
+#order-form #country .header, #order-form #city .header, #order-form #service .header, #order-form #country .list, #order-form #city .list, #order-form #service .list, #order-form.order-country #city .header, #order-form.order-country #service .header, #order-form.order-country #city .list, #order-form.order-country #service .list{
+	width: 100%;
 }
-
-/* --- ПОЛЯ ВВОДА (ОБЁРТКА .header) --- */
-#order-form-uptaxi [id^="order-uptaxi-form-"] .input .header,
-#order-form-uptaxi [id*="order-uptaxi-form-"] .input .header {
-  height: auto !important;
-  border: 1px solid #e2e8f0 !important;
-  border-radius: 20px !important;
-  background: #f8fafd !important;
-  transition: all 0.2s ease !important;
-  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02) !important;
+.input .header{
+	background-color: #fcfcfc;
+	display: -webkit-box;
+	height: 50px;
+	border: 1px solid #aaa;
+	border-radius: 0px;
 }
-
-/* --- САМИ INPUT, SELECT, TEXTAREA --- */
-#order-form-uptaxi [id^="order-uptaxi-form-"] .input .header input,
-#order-form-uptaxi [id^="order-uptaxi-form-"] .input .header select,
-#order-form-uptaxi [id^="order-uptaxi-form-"] .input.text .header input,
-#order-form-uptaxi [id^="order-uptaxi-form-"] textarea {
-  width: 100% !important;
-  padding: 16px 20px !important;
-  font-size: 1rem !important;
-  font-weight: 400 !important;
-  color: #1e293b !important;
-  background: transparent !important;
-  border: none !important;
-  border-radius: 20px !important;
-  outline: none !important;
-  box-sizing: border-box !important;
-  line-height: 1.5 !important;
+.input .header:hover{
+	opacity: 1;
 }
-
-/* --- КНОПКИ (все типы) --- */
-#order-form-uptaxi [id^="order-uptaxi-form-"] .input.buttom .header,
-#order-form-uptaxi [id^="order-uptaxi-form-"] .input.big-buttom .header,
-#order-form-uptaxi [id^="order-uptaxi-form-"] #to-order .header,
-#order-form-uptaxi [id^="order-uptaxi-form-"] #button-auth .header,
-#order-form-uptaxi [id^="order-uptaxi-form-"] #add-address .header,
-#order-form-uptaxi [id^="order-uptaxi-form-"] #add-pred-datetime .header,
-#order-form-uptaxi [id^="order-uptaxi-form-"] #auth-button-come-in .header {
-  background: #ce2127 !important;
-  border: none !important;
-  border-radius: 40px !important;
-  box-shadow: 0 8px 16px -4px rgba(206, 33, 39, 0.3) !important;
-  transition: all 0.2s ease !important;
-  opacity: 1 !important;
-  height: auto !important;
+.input .header.active{
+	opacity: 1;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 3;
+	border:0px;
+	border-bottom: 1px solid #aaa;
 }
-
-/* Текст на красных кнопках */
-#order-form-uptaxi [id^="order-uptaxi-form-"] .input.buttom .header input,
-#order-form-uptaxi [id^="order-uptaxi-form-"] .input.big-buttom .header input,
-#order-form-uptaxi [id^="order-uptaxi-form-"] #to-order .header input,
-#order-form-uptaxi [id^="order-uptaxi-form-"] #button-auth .header input,
-#order-form-uptaxi [id^="order-uptaxi-form-"] #add-address .header input,
-#order-form-uptaxi [id^="order-uptaxi-form-"] #add-pred-datetime .header input,
-#order-form-uptaxi [id^="order-uptaxi-form-"] #auth-button-come-in .header input {
-  color: white !important;
-  font-weight: 600 !important;
-  font-size: 1.1rem !important;
-  padding: 16px 20px !important;
-  text-align: center !important;
-  background: transparent !important;
-  border: none !important;
+.input .header input{
+	height: 100%;
+    padding: 8px;
 }
-
-/* --- ПОЛЕ ЦЕНЫ (бежевый фон) --- */
-#order-form-uptaxi [id^="order-uptaxi-form-"] #price-order .header {
-  background: #fbf0c7 !important;
-  border: 1px dashed #ce2127 !important;
-  border-radius: 40px !important;
+.input .header i{
+	width: 60px;
+	height: 50px;
+	background: transparent;
 }
-
-/* --- ВЫПАДАЮЩИЕ СПИСКИ --- */
-#order-form-uptaxi [id^="order-uptaxi-form-"] .input .list {
-  border-radius: 18px !important;
-  border: 1px solid #e2e8f0 !important;
-  margin-top: 4px !important;
-  background: white !important;
-  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1) !important;
-  max-height: 240px !important;
-  overflow-y: auto !important;
-  z-index: 50 !important;
+.input.buttom .header i{
+    background: transparent;
 }
-
-/* Элементы списка */
-#order-form-uptaxi [id^="order-uptaxi-form-"] .input .list .item {
-  padding: 12px 16px !important;
-  font-size: 0.95rem !important;
-  color: #1e293b !important;
-  border-bottom: 1px solid #f1f5f9 !important;
-  transition: background 0.15s !important;
+.input .header i::before {
+	border: 15px solid transparent;
+	border-top: 15px solid #f6b317;
+	top: 17px;
+	left: 15px;
+	opacity: 1;
+	border-radius: 20px;
 }
-
-#order-form-uptaxi [id^="order-uptaxi-form-"] .input .list .item:hover {
-  background: #f6b317 !important;
-  color: #000 !important;
+.input.buttom .header i::before {
+	border-top: 15px solid #fff;
 }
-
-/* --- КАЛЕНДАРЬ (ваши цвета) --- */
-#order-form-uptaxi [id^="order-uptaxi-form-"] .calendar table tr td.today {
-  color: #ce2127 !important;
-  font-weight: 600 !important;
+.input .header i::after {
+	border: 14px solid transparent;
+	border-top: 14px solid #fcfcfc;
+	top: 12px;
+	left: 16px;
 }
-
-#order-form-uptaxi [id^="order-uptaxi-form-"] .calendar table tr td.select {
-  background: #ce2127 !important;
-  color: white !important;
-  border-radius: 30px !important;
+.input.buttom .header i::after {
+	border-top: 14px solid #000;
 }
-
-/* --- МОБИЛЬНАЯ АДАПТАЦИЯ (ПОЛНОСТЬЮ ПОД ВАШИМ КОНТРОЛЕМ) --- */
-@media (max-width: 640px) {
-  #order-form-uptaxi [id^="order-uptaxi-form-"] #form {
-    padding: 24px 16px !important;
-    border-radius: 24px !important;
-  }
-  #order-form-uptaxi [id^="order-uptaxi-form-"] .input .header input {
-    padding: 14px 16px !important;
-    font-size: 0.95rem !important;
-  }
-  #order-form-uptaxi [id^="order-uptaxi-form-"] #to-order {
-    width: 100% !important;
-    margin-left: 0 !important;
-  }
+.input .list, .input .checkbox{
+	border-radius: 0px;
+	background-color: #fcfcfc;
+	position: fixed;
+	max-height:100%;
+	min-height:100%;
+	top:0px;
+	z-index: 2;
+}
+.input .list .item, .input .checkbox .item{
+	padding: 15px 10px;
+	border-bottom: 1px solid #f1f1f1;
+}
+.input .list .item.one{
+	margin-top: 51px;
+}
+.input .list .item:hover{
+	background-color: #f6b317;
+	color: #000;
+}
+.input .list::-webkit-scrollbar-thumb, .input .checkbox::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	background-color: #f6b317;
+}
+.input .list::-webkit-scrollbar, .input .checkbox::-webkit-scrollbar {
+	width: 4px;
+}
+#addresses .address.active{
+	position: static;
+}
+#addresses .address .sort{
+	display: block;
+}
+#addresses .address .sort i.delete:before, #addresses .address .sort i.delete:after {
+	top: 20px;
+}
+#addresses .address .sort i:last-child::before {
+	top: 36px;
+}
+#addresses .address .sort i:first-child::before{
+	top: 0px;
+}
+#addresses .address .street{
+	width: auto;
+	float: none;
+}
+#addresses .address .street .header.active i, #addresses .address .dom .header.active i{
+	display: block;
+}
+#addresses .address:first-child .street, #addresses .address:first-child .dom{
+	width: auto;
+}
+.street.input .list .item:first-child, .dom.input .list .item:first-child, .pod.input .list .item:first-child, .checkbox .item:first-child {
+	margin-top: 51px;
+}
+#addresses .address .dom{
+	width:100%;
+	margin-left: 0px;
+}
+#addresses .address:first-child .dom{
+	width:39%;
+	margin-left: 0px;
+	margin-right:1%;
+	float: left;
+}
+#addresses .address .pod{
+	width:59%;
+	margin-left:1%;
+	float: left;
+}
+#dop-settings-content{
+	border-radius: 3px;
+}
+.radio{
+	height: 40px;
+	border-radius: 0px;
+}
+.radio div p{
+	padding: 13px;
+}
+#form-datapred{
+	padding: 2%;
+	position: fixed;
+	top: 50px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+#form-datapred div.radio, #form-datapred #datepred-date div.calendar, #form-datapred #add-pred-datetime.input .header{
+	width: 96%;
+	margin: 0px;
+}
+#form-datapred #datepred-time{
+	width: 96%;
+}
+#form-datapred #select-hour .label, #form-datapred #select-hour .header, #form-datapred #select-hour .list, #form-datapred #select-minute .label, #form-datapred #select-minute .header, #form-datapred #select-minute .list, #form-datapred #add-pred-datetime {
+	width: 100%;
+	margin: 0px;
+}
+#form-datapred div.radio, #form-datapred #select-hour .label, #form-datapred #select-minute .label{
+	margin-bottom: 10px;
+}
+.calendar #calendar-select-month i:last-child {
+	right: 6%;
+}
+#form-datapred .radio div#label-datepred-date, .radio div#label-datepred-now{
+	border-radius: 0px;
+}
+#form-datapred .radio div#label-datepred-time, .radio div#label-datepred-other{
+	border-radius: 0px;
+}
+#form-datapred #select-hour, #form-datapred #select-minute {
+	width: 100%;
+	float: none;
+	margin-left: 0px;
+}
+#form-datapred .colon{
+	display: none;
+}
+#form-datapred #add-pred-datetime, #add-options-order{
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	padding: 10px 2%;
+}
+#select-hour .list .item, #select-minute .list .item {
+	padding: 15px 0px;
+}
+.checkbox .item:last-child {
+	margin-bottom: 73px;
+}
+#options-order.active #add-options-order{
+	width: 96%;
+	z-index: 2;
+	bottom: -10px;
+	background-color: #fff;
+	display: block;
+}
+#price-order, .auth #price-order, #to-order, #button-auth {
+	width: 100%;
+}
+.input.transparent .header, .input.big-buttom .header{
+	padding: 0px;
+}
+#to-order, #button-auth{
+	margin:0px;
+	margin-bottom: 10px;
+}
+#form-auth, #form-auth.error{
+	height: 100%;
+	width: 100%;
+	border: 0px;
+	border-radius: 0px;
+	background-color: #fff;
+	background-image: url(images/background.png);
+	background-size: 100% 100%;
+}
+#form-auth>div, #form-auth.error>div{
+	margin: 0px 2%;
+	padding: 0px;
+	width: 96%;
+	border-radius: 0px;
+	background: transparent;
+}
+#form-auth>div>div, #form-auth>div>div.login, #form-auth>div>div.password, #form-auth>div>div.error{
+    width: 100%;
+	margin: 0px;
+	padding-top: 10px;
+}
+#price-order>.wait-price{
+	height: 50px;
+	border-radius: 0px;
+}
+.input.error .header {
+	height: 48px;
+}
+.input.error .header input{
+	padding: 7px;
+}
+.input.error .header i::after {
+	border-top: 14px solid #ffd7d9;
 }
