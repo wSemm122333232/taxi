@@ -1,0 +1,288 @@
+#order-uptaxi-form-69a57b7a4def4 #order-form .input#country, #order-uptaxi-form-69a57b7a4def4 #order-form .input#city, #order-uptaxi-form-69a57b7a4def4 #order-form .input#service, #order-uptaxi-form-69a57b7a4def4 #order-form .input.street, #order-uptaxi-form-69a57b7a4def4 #order-form .input.dom, #order-uptaxi-form-69a57b7a4def4 #order-form .input.pod{
+	float: none;
+	position: static;
+	margin-right: 0px;
+	width: 100%;
+}
+#order-uptaxi-form-69a57b7a4def4 #order-form #country .header, #order-uptaxi-form-69a57b7a4def4 #order-form #city .header, #order-uptaxi-form-69a57b7a4def4 #order-form #service .header, #order-uptaxi-form-69a57b7a4def4 #order-form #country .list, #order-uptaxi-form-69a57b7a4def4 #order-form #city .list, #order-uptaxi-form-69a57b7a4def4 #order-form #service .list, #order-uptaxi-form-69a57b7a4def4 #order-form.order-country #city .header, #order-uptaxi-form-69a57b7a4def4 #order-form.order-country #service .header, #order-uptaxi-form-69a57b7a4def4 #order-form.order-country #city .list, #order-uptaxi-form-69a57b7a4def4 #order-form.order-country #service .list{
+	width: 100%;
+}
+#order-uptaxi-form-69a57b7a4def4 .input .header{
+	background-color: #fcfcfc;
+	display: -webkit-box;
+	height: 50px;
+	border: 1px solid #aaa;
+	border-radius: 0px;
+}
+#order-uptaxi-form-69a57b7a4def4 .input .header:hover{
+	opacity: 1;
+}
+#order-uptaxi-form-69a57b7a4def4 .input .header.active{
+	opacity: 1;
+	position: fixed;
+	top: 0px;
+	left: 0px;
+	z-index: 16777270;
+	border:0px;
+	border-bottom: 1px solid #aaa;
+}
+#order-uptaxi-form-69a57b7a4def4 .input .header input{
+	height: 100%;
+    padding: 8px;
+}
+#order-uptaxi-form-69a57b7a4def4 .input .header i{
+	width: 60px;
+	height: 50px;
+	background: transparent;
+}
+#order-uptaxi-form-69a57b7a4def4 .input.buttom .header i{
+    background: transparent;
+}
+#order-uptaxi-form-69a57b7a4def4 .input .header i::before {
+	border: 15px solid transparent;
+	border-top: 15px solid #f6b317;
+	top: 17px;
+	left: 15px;
+	opacity: 1;
+	border-radius: 20px;
+}
+#order-uptaxi-form-69a57b7a4def4 .input.buttom .header i::before {
+	border-top: 15px solid #fff;
+}
+#order-uptaxi-form-69a57b7a4def4 .input .header i::after {
+	border: 14px solid transparent;
+	border-top: 14px solid #fcfcfc;
+	top: 12px;
+	left: 16px;
+}
+#order-uptaxi-form-69a57b7a4def4 .input.buttom .header i::after {
+	border-top: 14px solid #000;
+}
+#order-uptaxi-form-69a57b7a4def4 .input .list, .input .checkbox{
+	border-radius: 0px;
+	background-color: #fcfcfc;
+	position: fixed;
+	max-height:100%;
+	min-height:100%;
+	top:0px;
+	z-index: 16777269;
+}
+#order-uptaxi-form-69a57b7a4def4 .input .list .item, .input .checkbox .item{
+	padding: 15px 10px;
+	border-bottom: 1px solid #f1f1f1;
+}
+#order-uptaxi-form-69a57b7a4def4 .input .list .item.one{
+	margin-top: 51px;
+}
+#order-uptaxi-form-69a57b7a4def4 .input .list .item:hover{
+	background-color: #f6b317;
+	color: #000;
+}
+#order-uptaxi-form-69a57b7a4def4 .input .list::-webkit-scrollbar-thumb, #order-uptaxi-form-69a57b7a4def4 .input .checkbox::-webkit-scrollbar-thumb {
+	border-radius: 0px;
+	background-color: #f6b317;
+}
+#order-uptaxi-form-69a57b7a4def4 .input .list::-webkit-scrollbar, #order-uptaxi-form-69a57b7a4def4 .input .checkbox::-webkit-scrollbar {
+	width: 4px;
+}
+#order-uptaxi-form-69a57b7a4def4 #addresses .address.active{
+	position: static;
+}
+#order-uptaxi-form-69a57b7a4def4 #addresses .address .sort{
+	display: block;
+}
+#order-uptaxi-form-69a57b7a4def4 #addresses .address .sort i.delete:before, #order-uptaxi-form-69a57b7a4def4 #addresses .address .sort i.delete:after {
+	top: 20px;
+}
+#order-uptaxi-form-69a57b7a4def4 #addresses .address .sort i:last-child::before {
+	top: 36px;
+}
+#order-uptaxi-form-69a57b7a4def4 #addresses .address .sort i:first-child::before{
+	top: 0px;
+}
+#order-uptaxi-form-69a57b7a4def4 #addresses .address .street{
+	width: auto;
+	float: none;
+}
+#order-uptaxi-form-69a57b7a4def4 #addresses .address .street .header.active i, #order-uptaxi-form-69a57b7a4def4 #addresses .address .dom .header.active i{
+	display: block;
+}
+#order-uptaxi-form-69a57b7a4def4 #addresses .address:first-child .street, #order-uptaxi-form-69a57b7a4def4 #addresses .address:first-child .dom{
+	width: auto;
+}
+#order-uptaxi-form-69a57b7a4def4 .street.input .list .item:first-child, #order-uptaxi-form-69a57b7a4def4 .dom.input .list .item:first-child, #order-uptaxi-form-69a57b7a4def4 .pod.input .list .item:first-child, #order-uptaxi-form-69a57b7a4def4 .checkbox .item:first-child {
+	margin-top: 51px;
+}
+#order-uptaxi-form-69a57b7a4def4 #addresses .address .dom{
+	width:100%;
+	margin-left: 0px;
+}
+#order-uptaxi-form-69a57b7a4def4 #addresses .address:first-child .dom{
+	width:39%;
+	margin-left: 0px;
+	margin-right:1%;
+	float: left;
+}
+#order-uptaxi-form-69a57b7a4def4 #addresses .address .pod{
+	width:59%;
+	margin-left:1%;
+	float: left;
+}
+#order-uptaxi-form-69a57b7a4def4 #date-pred-modal{
+	width: 100%;
+	position: relative;
+	border: 0px;
+	border-radius: 0px;
+	background-color: transparent;
+	box-shadow: none;
+	height: auto;
+	z-index: auto;
+}
+#order-uptaxi-form-69a57b7a4def4 #date-pred-modal>div.left-calendar, #order-uptaxi-form-69a57b7a4def4 #date-pred-modal>div.right-time{
+	margin: 0px;
+    height: auto;
+    width: 100%;
+}
+#order-uptaxi-form-69a57b7a4def4 #date-pred>.header{
+	display: block;
+}
+#order-uptaxi-form-69a57b7a4def4 #date-pred .calendar{
+	margin-top: 50px;
+	border-radius: 0px;
+	background-color: rgb(252, 252, 252);
+	position: fixed;
+	max-height: 100%;
+	min-height: 100%;
+	top: 0px;
+	z-index: 16777269;
+	display: none;
+}
+#order-uptaxi-form-69a57b7a4def4 .calendar table tr td{
+	height: 50px;
+}
+#order-uptaxi-form-69a57b7a4def4 #date-pred-ok{
+	display: block;
+	position: fixed;
+	bottom: 0;
+	width: 96%;
+}
+#order-uptaxi-form-69a57b7a4def4 #date-pred-modal>.right-time>.label-time, #order-uptaxi-form-69a57b7a4def4 #date-pred-modal #label-pred-order, #order-uptaxi-form-69a57b7a4def4 #date-pred-modal #pred-order-cancel, #order-uptaxi-form-69a57b7a4def4 #date-pred-modal #pred-order-ok{
+	display: none;
+}
+#order-uptaxi-form-69a57b7a4def4 #date-pred-modal #hour-pred, #order-uptaxi-form-69a57b7a4def4 #date-pred-modal #minute-pred{
+	width: 50%;
+	float: left;
+}
+#order-uptaxi-form-69a57b7a4def4 #dop-settings-content{
+	border-radius: 3px;
+}
+#order-uptaxi-form-69a57b7a4def4 .radio{
+	height: 40px;
+	border-radius: 0px;
+}
+#order-uptaxi-form-69a57b7a4def4 .radio div p{
+	padding: 13px;
+}
+#order-uptaxi-form-69a57b7a4def4 #form-datapred{
+	padding: 2%;
+	position: fixed;
+	top: 50px;
+	left: 0px;
+	width: 100%;
+	height: 100%;
+}
+#order-uptaxi-form-69a57b7a4def4 #form-datapred div.radio, #order-uptaxi-form-69a57b7a4def4 #form-datapred #datepred-date div.calendar, #order-uptaxi-form-69a57b7a4def4 #form-datapred #add-pred-datetime.input .header{
+	width: 96%;
+	margin: 0px;
+}
+#order-uptaxi-form-69a57b7a4def4 #form-datapred #datepred-time{
+	width: 96%;
+}
+#order-uptaxi-form-69a57b7a4def4 #form-datapred #select-hour .label, #order-uptaxi-form-69a57b7a4def4 #form-datapred #select-hour .header, #order-uptaxi-form-69a57b7a4def4 #form-datapred #select-hour .list, #order-uptaxi-form-69a57b7a4def4 #form-datapred #select-minute .label, #order-uptaxi-form-69a57b7a4def4 #form-datapred #select-minute .header, #order-uptaxi-form-69a57b7a4def4 #form-datapred #select-minute .list, #order-uptaxi-form-69a57b7a4def4 #form-datapred #add-pred-datetime {
+	width: 100%;
+	margin: 0px;
+}
+#order-uptaxi-form-69a57b7a4def4 #form-datapred div.radio, #order-uptaxi-form-69a57b7a4def4 #form-datapred #select-hour .label, #order-uptaxi-form-69a57b7a4def4 #form-datapred #select-minute .label{
+	margin-bottom: 10px;
+}
+#order-uptaxi-form-69a57b7a4def4 .calendar #calendar-select-month i:last-child {
+	right: 6%;
+}
+#order-uptaxi-form-69a57b7a4def4 #form-datapred .radio div#label-datepred-date, #order-uptaxi-form-69a57b7a4def4 .radio div#label-datepred-now{
+	border-radius: 0px;
+}
+#order-uptaxi-form-69a57b7a4def4 #form-datapred .radio div#label-datepred-time, #order-uptaxi-form-69a57b7a4def4 .radio div#label-datepred-other{
+	border-radius: 0px;
+}
+#order-uptaxi-form-69a57b7a4def4 #form-datapred #select-hour, #order-uptaxi-form-69a57b7a4def4 #form-datapred #select-minute {
+	width: 100%;
+	float: none;
+	margin-left: 0px;
+}
+#order-uptaxi-form-69a57b7a4def4 #form-datapred .colon{
+	display: none;
+}
+#order-uptaxi-form-69a57b7a4def4 #form-datapred #add-pred-datetime, #order-uptaxi-form-69a57b7a4def4 #add-options-order{
+	position: fixed;
+	left: 0px;
+	bottom: 0px;
+	width: 100%;
+	padding: 10px 2%;
+}
+#order-uptaxi-form-69a57b7a4def4 #select-hour .list .item, #order-uptaxi-form-69a57b7a4def4 #select-minute .list .item {
+	padding: 15px 0px;
+}
+#order-uptaxi-form-69a57b7a4def4 .checkbox .item:last-child {
+	margin-bottom: 73px;
+}
+#order-uptaxi-form-69a57b7a4def4 #options-order.active #add-options-order{
+	width: 96%;
+	z-index: 16777270;
+	bottom: -10px;
+	background-color: #fff;
+	display: block;
+}
+#order-uptaxi-form-69a57b7a4def4 #price-order, #order-uptaxi-form-69a57b7a4def4 .auth #price-order, #order-uptaxi-form-69a57b7a4def4 #to-order, #order-uptaxi-form-69a57b7a4def4 #button-auth {
+	width: 100%;
+}
+#order-uptaxi-form-69a57b7a4def4 .input.transparent .header, #order-uptaxi-form-69a57b7a4def4 .input.big-buttom .header{
+	padding: 0px;
+}
+#order-uptaxi-form-69a57b7a4def4 #to-order, #order-uptaxi-form-69a57b7a4def4 #button-auth{
+	margin:0px;
+	margin-bottom: 10px;
+}
+#order-uptaxi-form-69a57b7a4def4 #form-auth, #order-uptaxi-form-69a57b7a4def4 #form-auth.error{
+	height: 100%;
+	width: 100%;
+	border: 0px;
+	border-radius: 0px;
+	background-color: #fff;
+	background-image: url(http://root.uptaxi.ru/uptaxi/clientsite/v32/images/background.png);
+	background-size: 100% 100%;
+}
+#order-uptaxi-form-69a57b7a4def4 #form-auth>div, #order-uptaxi-form-69a57b7a4def4 #form-auth.error>div{
+	margin: 0px 2%;
+	padding: 0px;
+	width: 96%;
+	border-radius: 0px;
+	background: transparent;
+}
+#order-uptaxi-form-69a57b7a4def4 #form-auth>div>div, #order-uptaxi-form-69a57b7a4def4 #form-auth>div>div.login, #order-uptaxi-form-69a57b7a4def4 #form-auth>div>div.password, #order-uptaxi-form-69a57b7a4def4 #form-auth>div>div.error{
+    width: 100%;
+	margin: 0px;
+	padding-top: 10px;
+}
+#order-uptaxi-form-69a57b7a4def4 #price-order>.wait-price{
+	height: 50px;
+	border-radius: 0px;
+}
+#order-uptaxi-form-69a57b7a4def4 .input.error .header {
+	height: 48px;
+}
+#order-uptaxi-form-69a57b7a4def4 .input.error .header input{
+	padding: 7px;
+}
+#order-uptaxi-form-69a57b7a4def4 .input.error .header i::after {
+	border-top: 14px solid #ffd7d9;
+}
