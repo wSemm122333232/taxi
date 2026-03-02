@@ -1,0 +1,140 @@
+/* ===== УНИВЕРСАЛЬНЫЕ СТИЛИ ДЛЯ ЛЮБОЙ ФОРМЫ UPTAXI ===== */
+#order-form-uptaxi {
+  font-family: 'Segoe UI', Roboto, system-ui, sans-serif;
+}
+
+/* --- КОНТЕЙНЕР ФОРМЫ --- */
+#order-form-uptaxi [id^="order-uptaxi-form-"] #form,
+#order-form-uptaxi [id*="order-uptaxi-form-"] #form {
+  max-width: 700px !important;
+  margin: 0 auto !important;
+  background: #ffffff !important;
+  padding: 32px 28px !important;
+  border-radius: 32px !important;
+  box-shadow: 0 20px 40px -10px rgba(0, 20, 30, 0.15) !important;
+  transition: box-shadow 0.3s !important;
+}
+
+/* --- ПОЛЯ ВВОДА (ОБЁРТКА .header) --- */
+#order-form-uptaxi [id^="order-uptaxi-form-"] .input .header,
+#order-form-uptaxi [id*="order-uptaxi-form-"] .input .header {
+  height: auto !important;
+  border: 1px solid #e2e8f0 !important;
+  border-radius: 20px !important;
+  background: #f8fafd !important;
+  transition: all 0.2s ease !important;
+  box-shadow: inset 0 2px 4px rgba(0,0,0,0.02) !important;
+}
+
+/* --- САМИ INPUT, SELECT, TEXTAREA --- */
+#order-form-uptaxi [id^="order-uptaxi-form-"] .input .header input,
+#order-form-uptaxi [id^="order-uptaxi-form-"] .input .header select,
+#order-form-uptaxi [id^="order-uptaxi-form-"] .input.text .header input,
+#order-form-uptaxi [id^="order-uptaxi-form-"] textarea {
+  width: 100% !important;
+  padding: 16px 20px !important;
+  font-size: 1rem !important;
+  font-weight: 400 !important;
+  color: #1e293b !important;
+  background: transparent !important;
+  border: none !important;
+  border-radius: 20px !important;
+  outline: none !important;
+  box-sizing: border-box !important;
+  line-height: 1.5 !important;
+}
+
+/* --- КНОПКИ (все типы) --- */
+#order-form-uptaxi [id^="order-uptaxi-form-"] .input.buttom .header,
+#order-form-uptaxi [id^="order-uptaxi-form-"] .input.big-buttom .header,
+#order-form-uptaxi [id^="order-uptaxi-form-"] #to-order .header,
+#order-form-uptaxi [id^="order-uptaxi-form-"] #button-auth .header,
+#order-form-uptaxi [id^="order-uptaxi-form-"] #add-address .header,
+#order-form-uptaxi [id^="order-uptaxi-form-"] #add-pred-datetime .header,
+#order-form-uptaxi [id^="order-uptaxi-form-"] #auth-button-come-in .header {
+  background: #ce2127 !important;
+  border: none !important;
+  border-radius: 40px !important;
+  box-shadow: 0 8px 16px -4px rgba(206, 33, 39, 0.3) !important;
+  transition: all 0.2s ease !important;
+  opacity: 1 !important;
+  height: auto !important;
+}
+
+/* Текст на красных кнопках */
+#order-form-uptaxi [id^="order-uptaxi-form-"] .input.buttom .header input,
+#order-form-uptaxi [id^="order-uptaxi-form-"] .input.big-buttom .header input,
+#order-form-uptaxi [id^="order-uptaxi-form-"] #to-order .header input,
+#order-form-uptaxi [id^="order-uptaxi-form-"] #button-auth .header input,
+#order-form-uptaxi [id^="order-uptaxi-form-"] #add-address .header input,
+#order-form-uptaxi [id^="order-uptaxi-form-"] #add-pred-datetime .header input,
+#order-form-uptaxi [id^="order-uptaxi-form-"] #auth-button-come-in .header input {
+  color: white !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  padding: 16px 20px !important;
+  text-align: center !important;
+  background: transparent !important;
+  border: none !important;
+}
+
+/* --- ПОЛЕ ЦЕНЫ (бежевый фон) --- */
+#order-form-uptaxi [id^="order-uptaxi-form-"] #price-order .header {
+  background: #fbf0c7 !important;
+  border: 1px dashed #ce2127 !important;
+  border-radius: 40px !important;
+}
+
+/* --- ВЫПАДАЮЩИЕ СПИСКИ --- */
+#order-form-uptaxi [id^="order-uptaxi-form-"] .input .list {
+  border-radius: 18px !important;
+  border: 1px solid #e2e8f0 !important;
+  margin-top: 4px !important;
+  background: white !important;
+  box-shadow: 0 10px 25px -5px rgba(0,0,0,0.1) !important;
+  max-height: 240px !important;
+  overflow-y: auto !important;
+  z-index: 50 !important;
+}
+
+/* Элементы списка */
+#order-form-uptaxi [id^="order-uptaxi-form-"] .input .list .item {
+  padding: 12px 16px !important;
+  font-size: 0.95rem !important;
+  color: #1e293b !important;
+  border-bottom: 1px solid #f1f5f9 !important;
+  transition: background 0.15s !important;
+}
+
+#order-form-uptaxi [id^="order-uptaxi-form-"] .input .list .item:hover {
+  background: #f6b317 !important;
+  color: #000 !important;
+}
+
+/* --- КАЛЕНДАРЬ (ваши цвета) --- */
+#order-form-uptaxi [id^="order-uptaxi-form-"] .calendar table tr td.today {
+  color: #ce2127 !important;
+  font-weight: 600 !important;
+}
+
+#order-form-uptaxi [id^="order-uptaxi-form-"] .calendar table tr td.select {
+  background: #ce2127 !important;
+  color: white !important;
+  border-radius: 30px !important;
+}
+
+/* --- МОБИЛЬНАЯ АДАПТАЦИЯ (ПОЛНОСТЬЮ ПОД ВАШИМ КОНТРОЛЕМ) --- */
+@media (max-width: 640px) {
+  #order-form-uptaxi [id^="order-uptaxi-form-"] #form {
+    padding: 24px 16px !important;
+    border-radius: 24px !important;
+  }
+  #order-form-uptaxi [id^="order-uptaxi-form-"] .input .header input {
+    padding: 14px 16px !important;
+    font-size: 0.95rem !important;
+  }
+  #order-form-uptaxi [id^="order-uptaxi-form-"] #to-order {
+    width: 100% !important;
+    margin-left: 0 !important;
+  }
+}
